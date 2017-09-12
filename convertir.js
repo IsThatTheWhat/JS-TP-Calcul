@@ -91,19 +91,19 @@ function conversion(chiffre){
 			case "1":
 				unite_1 = "cm"
 				unite_2 = "inches"
-				resultat = chiffre * 0,393701
+				resultat = chiffre * 0.393701
 			break;
 
 			case "2":
 				unite_1 = "kg"
 				unite_2 = "pounds"
-				resultat = chiffre * 2,20462
+				resultat = chiffre * 2.20462
 			break;
 
 			case "3":
 				unite_1 = "km"
 				unite_2 = "mile"
-				resultat = chiffre * 0,621371
+				resultat = chiffre * 0.621371
 			break;
 
 			case "4":
@@ -121,19 +121,19 @@ function conversion(chiffre){
 			case "1":
 				unite_1 = "cm"
 				unite_2 = "inches"
-				resultat = chiffre * 2,54
+				resultat = chiffre * 2.54
 			break;
 
 			case "2":
 				unite_1 = "pounds"
 				unite_2 = "kg"
-				resultat = chiffre * 0,453592
+				resultat = chiffre * 0.453592
 			break;
 
 			case "3":
 				unite_1 = "miles"
 				unite_2 = "km"
-				resultat = chiffre * 1,60934
+				resultat = chiffre * 1.60934
 			break;
 
 			case "4":
