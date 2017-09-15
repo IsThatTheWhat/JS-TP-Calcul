@@ -30,7 +30,7 @@
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
 	            <li><a href="#" id="calculer">Calculer</a></li>
-	            <li><a href="factoriel.html" id="effacer">Effacer</a></li>
+	            <li><a href="convertir.html" id="effacer">Effacer</a></li>
 	            <li><a href="#" id="print">Imprimer</a></li>
 	          </ul>
 	        </li>
@@ -57,16 +57,27 @@
   	<div class="container">
 	  	<div class="row" style="padding-top: 20px;">
 		  	<div class="col-md-8 col-md-offset-2">
-		  		<h1 class="text-center bg-primary">Calcul Factoriel</h1>
+		  		<h1 class="text-center bg-primary">Calcul de l'indice de masse corporel (IMC)</h1>
 		  	</div>
   		</div>
 	  	<div class="row" style="padding-top: 20px;">
 		  	<div class="col-md-8 col-md-offset-2">
-		  		<div class="form-group" id="chiffre_input">
-				   <label for="chiffre">Factoriel</label>
-				   <input type="text" class="form-control" id="chiffre" placeholder="Factoriel a calculer" onchange="checkFactoriel()">
+		  		<div class="form-group" id="div_input_name">
+				   <label for="name" id="label_name">Nom</label>
+				   <input type="text" class="form-control" id="name" placeholder="John Doe" onchange="checkName()">
 				</div>
-				<button class="btn btn-success" id="calculer" onclick="calcul_factoriel(document.getElementById('chiffre').value)">Calculer</button>
+		  		<div class="form-group" id="div_input_email">
+				   <label for="email" id="label_email">E-mail</label>
+				   <input type="email" class="form-control" id="email" placeholder="johnDoe@gmail.com" onchange="checkEmail()">
+				</div>
+		  		<div class="form-group" id="div_input_message">
+				   <label for="message" id="label_message">Message</label>
+				   <textarea class="form-control" id="message" onchange="checkMessage()"></textarea>
+				</div>
+				<div id="div_calculer">
+					<button class="btn btn-success" id="envoyer" 
+						onclick="send()">Envoyer</button>					
+				</div>
 		  	</div>
   		</div>
 	  	<div class="row" style="padding-top: 20px;">
@@ -79,7 +90,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  	<script type="text/javascript" src="factoriel.js"></script>    
-  	<script type="text/javascript" src="print.js"></script>    
+  	<script type="text/javascript" src="contacter.js"></script>   
+  	<script type="text/javascript" src="print.js"></script>   
   </body>
 </html>

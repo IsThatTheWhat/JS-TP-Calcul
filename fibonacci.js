@@ -17,7 +17,12 @@ function fibonacci(chiffre){
 
 	var index = fib.length - 2
 
-	var string = '<div class="alert alert-success" role="alert" id="alert"> Fibonacci ' + chiffre + ' = <strong>' + fib[index] + '</strong></div>'
+	var resultat = ""
+	for (var i = 0; i < fib.length; i++) {
+		resultat += fib[i] + ' '
+	};
+	
+	var string = '<div class="alert alert-success" role="alert" id="alert"> Fibonacci ' + chiffre + ' = <strong>' + resultat + '</strong></div>'
 	
 	var div_alert = document.getElementById("div_alert")
 	div_alert.innerHTML = string;

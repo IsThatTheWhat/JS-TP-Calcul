@@ -30,7 +30,7 @@
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
 	            <li><a href="#" id="calculer">Calculer</a></li>
-	            <li><a href="factoriel.html" id="effacer">Effacer</a></li>
+	            <li><a href="convertir.html" id="effacer">Effacer</a></li>
 	            <li><a href="#" id="print">Imprimer</a></li>
 	          </ul>
 	        </li>
@@ -55,31 +55,25 @@
 	  </div><!-- /.container-fluid -->
 	</nav>
   	<div class="container">
-	  	<div class="row" style="padding-top: 20px;">
-		  	<div class="col-md-8 col-md-offset-2">
-		  		<h1 class="text-center bg-primary">Calcul Factoriel</h1>
+	  	<div class="jumbotron">
+		 	<div class="container">
+		 		<h1>Salut toi !!!</h1>
+		 		<p>Ce site vous permet de faire certain calculs :</p>
+		 			<ul>
+		 				<li><a href="imc.html">IMC</a></li>
+		 				<li><a href="factoriel.html">Factoriel</a></li>
+		 				<li><a href="fibonacci.html">Fibonacci</a></li>
+		 				<li><a href="convertir.html">Convertir</a></li>
+		 			</ul>
 		  	</div>
-  		</div>
-	  	<div class="row" style="padding-top: 20px;">
-		  	<div class="col-md-8 col-md-offset-2">
-		  		<div class="form-group" id="chiffre_input">
-				   <label for="chiffre">Factoriel</label>
-				   <input type="text" class="form-control" id="chiffre" placeholder="Factoriel a calculer" onchange="checkFactoriel()">
-				</div>
-				<button class="btn btn-success" id="calculer" onclick="calcul_factoriel(document.getElementById('chiffre').value)">Calculer</button>
-		  	</div>
-  		</div>
-	  	<div class="row" style="padding-top: 20px;">
-		  	<div class="col-md-8 col-md-offset-2" id="div_alert"></div>
-  		</div>
+		</div>
   	</div>
   	
   	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  	<script type="text/javascript" src="factoriel.js"></script>    
-  	<script type="text/javascript" src="print.js"></script>    
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
+  	<script type="text/javascript" src="print.js"></script>   
   </body>
 </html>

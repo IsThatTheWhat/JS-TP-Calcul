@@ -80,15 +80,13 @@ function conversion(chiffre){
 	var conversion_value = document.getElementById("conversion").value
 	var invert = document.getElementById("invert")
 
-	var resultat = 0
+	var resultat = 0.0
 	var unite_1 = ""
 	var unite_2 = ""
 
-	console.log(invert.checked, conversion_value)
-
 	if (!invert.checked) {
 		switch(conversion_value) {
-			case "1":
+			case '1':
 				unite_1 = "cm"
 				unite_2 = "inches"
 				resultat = chiffre * 0.393701
@@ -111,10 +109,6 @@ function conversion(chiffre){
 				unite_2 = "°F"
 				resultat = 1.8 * chiffre + 32
 			break;
-
-			default:
-				div_calculer.style.visibility = 'hidden'
-				div_input.style.visibility = 'hidden'
 		}
 	} else {
 		switch(conversion_value) {
@@ -148,8 +142,7 @@ function conversion(chiffre){
 		}
 	}
 
-
-	var string = '<div class="alert alert-success" role="alert" id="alert">' + chiffre + ' ' + unite_1 + ' = <strong>' + resultat  + '</strong> ' + unite_2 + '</div>'
+	var string = '<div class="alert alert-success" role="alert" id="alert">' + chiffre + ' ' + unite_1 + ' = <strong>' + resultat.toFixed(2)  + '</strong> ' + unite_2 + '</div>'
 	
 	var div_alert = document.getElementById("div_alert")
 	div_alert.innerHTML = string;
@@ -182,5 +175,14 @@ function checkConversion(){
 	} else {
 		chiffre_input.classList.add('has-success')
 	}
-
 }
+
+
+$(function () {
+    $(document).ready(function() {
+        document.getElementById('calculer').addEventListener('click', function (e) {
+	        e.preventDefault()
+	        calcul_conversion(document.getElementById('conversion').value)
+	    })
+    });
+});
